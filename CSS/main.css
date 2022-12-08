@@ -1,0 +1,134 @@
+button
+{float: right;
+    display: flex;
+   
+}
+ 
+.post{
+    width:60%;
+    background-color: rgb(244, 193, 82);
+    margin: auto;
+    border-radius: 50px;
+    overflow:hidden;
+    
+
+}
+.post h2 {
+    padding: 10px;
+}
+.post img{
+    width :100%
+}
+header{
+    background-color: rgb(42, 165, 73);
+    position: sticky;
+    top:0;
+    margin-bottom: 5px;
+}
+header ul {
+    list-style: none;
+    margin: 0 0 0 15px;
+}
+body{
+
+    margin:0;
+    background-color: rgb(10, 124, 38);
+}
+body.dark-theme {
+    background-color: rgb(0, 0, 0);
+}
+.dark-theme .post{
+    background-color:#312525;
+    color: cadetblue;
+
+}
+.dark-theme button img {
+    content:url(../img/sun.jpg);
+}
+.dark-theme header{
+    background-color: black;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(43, 205, 226);
+    padding: 10px;
+}
+footer a{
+    color:brown;
+}
+header li{
+    float:left;
+    padding: 0px 10px 0 px 10px;
+}
+.button:hover{
+    background-color: rgb(25, 0, 255);
+    cursor: pointer;
+}
+.disabled{
+    font-weight: bold;
+    background-color: brown;
+    pointer-events: none;
+}
+@media(max-width:480px){
+    .headerimg{
+        content:url(../img/background.jpg);
+        height: 100%;
+    }
+    header ul{
+        margin:0;
+        padding:0;
+        font-size: small;
+    }
+    .post{
+        width:100%;
+        border-radius:0;
+    }
+}
+.like{
+    float:right;
+    font-size: 24px;
+    user-select: none;
+    display:flex;
+    margin-right: 3%;
+}
+.plus{
+    color: green;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.minus{
+    color:red;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.user-comment{
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    position: relative;
+    display: flex;
+}
+.comment-form {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px 12px;
+}
+.comment-inner {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.comment-feld {
+    width: 99%;
+    height: 30px;
+    padding: 0 10px;
+    border: solid;
+    background-color: white;
+    font: inherit;
+    font-size: 14px;
+    color:blue;
+}
+.comment-feld::placeholder {
+    font-size: 14px;
+    font-style: italic;
+}
